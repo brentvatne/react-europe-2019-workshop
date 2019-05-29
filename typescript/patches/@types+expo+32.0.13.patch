@@ -1,0 +1,13 @@
+diff --git a/node_modules/@types/expo/index.d.ts b/node_modules/@types/expo/index.d.ts
+index 4aa2e7f..46dbfef 100644
+--- a/node_modules/@types/expo/index.d.ts
++++ b/node_modules/@types/expo/index.d.ts
+@@ -3623,7 +3623,7 @@ export namespace Haptic {
+   function notification(notificationType?: NotificationType): void;
+   function impact(impactStyles?: ImpactStyles): void;
+ 
+-  enum ImpactStyles {
++  enum ImpactFeedbackStyle {
+     Light = 'light',
+     Medium = 'medium',
+     Heavy = 'heavy'

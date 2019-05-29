@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "ota",
+    "slug": "ota",
+    "privacy": "public",
+    "sdkVersion": "32.0.0",
+    "platforms": ["ios", "android"],
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      // "fallbackToCacheTimeout": 30000, // wait up to 30 seconds, yikes
+      // "fallbackToCacheTimeout": 0, // download in the background
+      // "checkAutomatically": "ON_LOAD", // default, check when app opens
+      // "checkAutomatically": "ON_ERROR_RECOVERY", // only check when it crashes
+      // "enabled": false, // if you really want to disable it
+    },
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "com.example.ota"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.ota"
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "your-organization-name-from-sentry-here",
+            "project": "your-project-name-from-sentry-here",
+            "authToken": "your-sentry-api-token-here"
+          }
+        }
+      ]
+    }
+  }
+}
