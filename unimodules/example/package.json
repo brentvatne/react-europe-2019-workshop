@@ -9,7 +9,7 @@
   "dependencies": {
     "expo-linear-gradient": "^4.0.0",
     "react": "16.8.3",
-    "react-native": "0.59.8",
+    "react-native": "0.62.3",
     "react-native-unimodules": "^0.3.1"
   },
   "devDependencies": {
